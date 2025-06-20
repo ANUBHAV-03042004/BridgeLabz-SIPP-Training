@@ -9,10 +9,14 @@ public class FactorsOfANumber {
         int number = sc.nextInt();
         // calculate the factors
        if(number<0)System.out.println("Entered number is not a positive number.");
-      for(int counter=1;counter<=number;counter++)
+       // initialized an integer to calculate factors
+      int counter=1;
+    		  while(counter<=number)
       {
-    	 if(number%counter==0) //       display the result
+    	 if(number%counter==0) 
+    		 //       display the result
     	       System.out.printf("Factor of %d is %d\n",number,counter);
+    	 counter++;
       }
     }
 }
