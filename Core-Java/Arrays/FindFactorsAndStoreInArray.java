@@ -9,7 +9,7 @@ public class FindFactorsAndStoreInArray {
         int maxFactor = 10;
         int[] factors = new int[maxFactor];
         int index = 0;
-
+//        FindFactors
         for (int i = 1; i <= number; i++) {
             if (number % i == 0) {
                 if (index == maxFactor) {
@@ -20,6 +20,7 @@ public class FindFactorsAndStoreInArray {
                     }
                     factors = temp;
                 }
+//                StoreInArray
                 factors[index++] = i;
             }
         }
