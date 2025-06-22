@@ -12,7 +12,7 @@ public class ComputeGradeAndCalculatePercentagein2D{
         double[] percentages = new double[n]; // To store percentage
         char[] grades = new char[n];          // To store grade
 
-        // Step 2: Input marks for each student
+        // Step 2: Input marks for each student in 2D
         for (int i = 0; i < n; i++) {
             System.out.println("Enter marks for Student " + (i + 1) + ":");
 
