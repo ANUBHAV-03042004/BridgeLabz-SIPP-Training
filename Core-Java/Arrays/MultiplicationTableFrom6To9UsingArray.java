@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class MultiplicationTableFrom6To9 {
+public class MultiplicationTableFrom6To9UsingArray {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a number: ");
