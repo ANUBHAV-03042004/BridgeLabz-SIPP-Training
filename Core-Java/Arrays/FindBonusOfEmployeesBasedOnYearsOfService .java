@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class FindBonusOfEmployeesBasedOnService {
+public class FindBonusOfEmployeesBasedOnYearsOfService {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int count = 10;
