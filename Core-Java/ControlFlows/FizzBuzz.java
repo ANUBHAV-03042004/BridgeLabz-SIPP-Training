@@ -22,7 +22,7 @@ public class FizzBuzz {
                 else
                     System.out.println(i);          // Regular number
 
-                i++;
+                i++; 
             }
         } else {
             System.out.println("Invalid input.");
