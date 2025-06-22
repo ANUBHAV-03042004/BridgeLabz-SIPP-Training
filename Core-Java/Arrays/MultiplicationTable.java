@@ -11,7 +11,7 @@ public class MultiplicationTable {
         for (int i = 1; i <= 10; i++) {
             table[i - 1] = number * i;
         }
-
+//  multiplication from 1-10 with user's input
         for (int i = 0; i < 10; i++) {
             System.out.println(number + " * " + (i + 1) + " = " + table[i]);
         }
