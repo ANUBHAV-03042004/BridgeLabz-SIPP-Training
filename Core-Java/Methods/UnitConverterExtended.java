@@ -33,6 +33,12 @@ public class UnitConverterExtended {
         System.out.println("Converted Gallons To Liters:"+liters);
         double gallons=convertLitersToGallons(liters);
         System.out.println("Converted Liters To Gallons:"+gallons);
+        System.out.print("Enter number in pounds: ");
+        double num3=sc.nextDouble();
+        double pounds=convertKgToPounds(num3);
+        System.out.println("Converted Kg To Pounds:"+pounds);
+        double kg=convertPoundsToKg(pounds);
+        System.out.println("Converted Poundsm To Kg:"+kg);
         sc.close();
     }
 }
