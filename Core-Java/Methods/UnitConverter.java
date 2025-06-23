@@ -1,16 +1,19 @@
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class UnitConverter {
+//	method to convert Km To Miles
     public static double convertKmToMiles(double km) {
         return km * 0.621371;
     }
+//	method to convert Miles To Km
     public static double convertMilesToKm(double miles) {
         return miles * 1.60934;
     }
+//	method to convert meters To feet
     public static double convertMetersToFeet(double m) {
         return m * 3.28084;
     }
+//	method to convert feet to meters 
     public static double convertFeetToMeters(double ft) {
         return ft * 0.3048;
     }
