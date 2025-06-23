@@ -1,5 +1,6 @@
 import java.util.*;
 public class RootsOfQuadraticEquation {
+//	method to find roots
     public static double[] findRoots(double a, double b, double c) {
         double delta = b * b - 4 * a * c;
         if (delta > 0) {
@@ -14,7 +15,12 @@ public class RootsOfQuadraticEquation {
     }
 
     public static void main(String[] args) {
-        double[] roots = findRoots(1, -3, 2); // Example
+    	Scanner sc=new Scanner(System.in);
+//    	user's input  a , b and c
+    	int a=sc.nextInt();
+    	int b=sc.nextInt();
+    	int c=sc.nextInt();
+        double[] roots = findRoots(a,b,c); 
         System.out.println("Roots: " + Arrays.toString(roots));
     }
 }
