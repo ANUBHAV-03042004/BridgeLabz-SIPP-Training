@@ -1,21 +1,27 @@
 import java.util.Scanner;
 
 public class UnitConverterExtended {
+//	method to convert Fahrenheit To Celsius
 	    public static double convertFahrenheitToCelsius(double f) {
 	        return (f - 32) * 5 / 9;
 	    }
+//		method to convert Celsius To Fahrenheit   
 	    public static double convertCelsiusToFahrenheit(double c) {
 	        return (c * 9 / 5) + 32;
 	    }
+//		method to convert Pounds To Kg
 	    public static double convertPoundsToKg(double p) {
 	        return p * 0.453592;
 	    }
+//		method to convert Kg To Pounds
 	    public static double convertKgToPounds(double kg) {
 	        return kg * 2.20462;
 	    }
+//		method to convert Gallons To Liters
 	    public static double convertGallonsToLiters(double g) {
 	        return g * 3.78541;
 	    }
+//		method to convert Liters To Gallons
 	    public static double convertLitersToGallons(double l) {
 	        return l * 0.264172;
 	    }
