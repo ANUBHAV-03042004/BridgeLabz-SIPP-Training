@@ -1,5 +1,5 @@
 import java.util.*;
-class BMICalculator {
+class BMICalculatorUsingArray {
     // Method to calculate BMI and update 2D array
     public static void calculateBMI(double[][] personData) {
         for (int i = 0; i < personData.length; i++) {
