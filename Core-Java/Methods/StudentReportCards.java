@@ -4,9 +4,9 @@ public class StudentReportCards {
 	public static double average(List marks)
 	{
 		double average=0.0d;
-		int s=0;
-		for(int i=0;i<marks.size();i++) s+=(int)marks.get(i);
-		average=(double)s/marks.size();
+		int sum=0;
+		for(int i=0;i<marks.size();i++) sum+=(int)marks.get(i);
+		average=(double)sum/marks.size();
 		
 		return average;
 	}
