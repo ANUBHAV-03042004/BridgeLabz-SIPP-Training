@@ -1,12 +1,12 @@
-import java.util.Scanner;
 
-public class ConvertTextIntoLowerCaseUsingBuiltInAndUserDefind {
-    public static String toLowerManual(String text) {
+import java.util.Scanner;
+public class ConvertStringIntoUpperCaseUsingBuiltInAndUserDefinedFunctionAndCompareResult {
+    public static String toUpperManual(String text) {
         String result = "";
         for (int i = 0; i < text.length(); i++) {
             char c = text.charAt(i);
-            if (c >= 'A' && c <= 'Z') {
-                c += 32; // ASCII conversion
+            if (c >= 'a' && c <= 'z') {
+                c -= 32; // ASCII logic for uppercase
             }
             result += c;
         }
@@ -26,11 +26,11 @@ public class ConvertTextIntoLowerCaseUsingBuiltInAndUserDefind {
         System.out.print("Enter a sentence: ");
         String input = sc.nextLine();
 
-        String custom = toLowerManual(input);
-        String builtin = input.toLowerCase();
+        String manual = toUpperManual(input);
+        String builtin = input.toUpperCase();
 
-        System.out.println("Manual Lowercase: " + custom);
-        System.out.println("Built-in Lowercase: " + builtin);
-        System.out.println("Strings Equal? " + compareStrings(custom, builtin));
+        System.out.println("Manual Uppercase: " + manual);
+        System.out.println("Built-in Uppercase: " + builtin);
+        System.out.println("Are they equal? " + compareStrings(manual, builtin));
     }
 }
