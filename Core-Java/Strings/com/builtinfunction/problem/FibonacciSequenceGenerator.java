@@ -1,6 +1,7 @@
 package com.builtinfunction.problem;
 import java.util.Scanner;
 public class FibonacciSequenceGenerator {
+//	generate fibonacci sequence and swap elements to generate next number
 	    public static void generateFibonacci(int terms) {
 	        int a = 0, b = 1;
 	        for (int i = 0; i < terms; i++) {
