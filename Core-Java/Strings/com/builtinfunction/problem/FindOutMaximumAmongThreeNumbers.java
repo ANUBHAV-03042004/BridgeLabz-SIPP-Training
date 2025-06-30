@@ -1,6 +1,7 @@
 package com.builtinfunction.problem;
 import java.util.Scanner;
 public class FindOutMaximumAmongThreeNumbers {
+//	used built in max function to find the maximum number
 	    public static int max(int a, int b, int c) {
 	        return Math.max(a, Math.max(b, c));
 	    }
