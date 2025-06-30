@@ -2,6 +2,7 @@ package com.builtinfunction.problem;
 import java.util.Scanner;
 
 public class FactorialUsingRecursion {
+//	factorial using recursion
 	    public static long factorial(int n) {
 	        if (n <= 1) return 1;
 	        return n * factorial(n - 1);
