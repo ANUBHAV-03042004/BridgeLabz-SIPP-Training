@@ -1,6 +1,7 @@
 package com.builtinfunction.problem;
 
 import java.util.Scanner;
+// check whether a string is palindrome or not
 	public class PalindromeChecker {
 	    public static boolean isPalindrome(String str) {
 	        String reversed = new StringBuilder(str).reverse().toString();
