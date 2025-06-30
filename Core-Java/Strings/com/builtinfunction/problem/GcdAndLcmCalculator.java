@@ -1,7 +1,7 @@
 package com.builtinfunction.problem;
 import java.util.Scanner;
 public class GcdAndLcmCalculator {
-
+//calculated gcd
 	    public static int gcd(int a, int b) {
 	        while (b != 0) {
 	            int temp = b;
@@ -10,7 +10,7 @@ public class GcdAndLcmCalculator {
 	        }
 	        return a;
 	    }
-
+// calculated lcm using recursion
 	    public static int lcm(int a, int b) {
 	        return a * b / gcd(a, b);
 	    }
