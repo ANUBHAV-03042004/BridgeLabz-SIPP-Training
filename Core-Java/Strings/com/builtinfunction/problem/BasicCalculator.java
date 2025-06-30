@@ -14,7 +14,7 @@ public class BasicCalculator {
         int b = sc.nextInt();
         System.out.print("Choose operation (add, subtract, multiply, divide): ");
         String op = sc.next();
-
+// used switch case to perform mathematical operations
         switch (op.toLowerCase()) {
             case "add": System.out.println("Result: " + add(a, b)); break;
             case "subtract": System.out.println("Result: " + subtract(a, b)); break;
