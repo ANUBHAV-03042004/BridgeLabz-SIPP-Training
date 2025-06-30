@@ -12,6 +12,7 @@ package com.builtinfunction.problem;
 	        System.out.println("Think of a number between 1 and 100. I'll guess it!");
 
 	        while (true) {
+//	        	used random function to generate number
 	            guess = low + rand.nextInt(high - low + 1);
 	            System.out.println("Is it " + guess + "? (high/low/correct): ");
 	            feedback = sc.next();
