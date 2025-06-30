@@ -2,7 +2,7 @@ package com.builtinfunction.problem;
 import java.util.Scanner;
 
 public class PrimeNumberChecker {
-
+// check prime number
 	    public static boolean isPrime(int num) {
 	        if (num < 2) return false;
 	        for (int i = 2; i <= Math.sqrt(num); i++) {
