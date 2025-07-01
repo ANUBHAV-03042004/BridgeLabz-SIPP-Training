@@ -2,8 +2,8 @@ import java.util.*;
 public class PowerCalculation {
 	 // Power Calculation
 	 public static void powerCalculation(double base,double exponent) {
-	     double result = Math.pow(base, exponent);
-	     System.out.println("Result: " + result);
+	     double ans = Math.pow(base, exponent);
+	     System.out.println("Result: " + ans);
 	 }
 		public static void main(String[] args) {
 		     Scanner sc = new Scanner(System.in);
