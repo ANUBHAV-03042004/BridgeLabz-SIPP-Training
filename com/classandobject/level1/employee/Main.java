@@ -1,4 +1,4 @@
-package com.classandobject.level1.employee;
+package classandobject.level1.employee;
 import java.util.*;
 public class Main {
 	public static void main(String args[])

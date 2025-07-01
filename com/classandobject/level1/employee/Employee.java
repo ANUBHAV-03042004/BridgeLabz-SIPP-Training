@@ -1,4 +1,4 @@
-package com.classandobject.level1.employee;
+package classandobject.level1.employee;
 public class Employee {
 String emp_name;
 int emp_id;
