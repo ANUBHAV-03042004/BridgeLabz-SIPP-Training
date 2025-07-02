@@ -1,4 +1,4 @@
-package encapsulationpolymorphisminterfaceandabstractclass;
+package encapsulationpolymorphisminterfaceandabstractclass.employeemanagementsystem;
 
 //Full-Time Employee subclass
 class FullTimeEmployee extends Employee {

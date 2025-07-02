@@ -1,4 +1,4 @@
-package encapsulationpolymorphisminterfaceandabstractclass;
+package encapsulationpolymorphisminterfaceandabstractclass.employeemanagementsystem;
 
 //Abstract class for Employee
 abstract class Employee implements Department {

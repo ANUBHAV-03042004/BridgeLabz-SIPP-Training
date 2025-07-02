@@ -1,4 +1,4 @@
-package encapsulationpolymorphisminterfaceandabstractclass;
+package encapsulationpolymorphisminterfaceandabstractclass.employeemanagementsystem;
 
 //Interface for Department
 interface Department {
