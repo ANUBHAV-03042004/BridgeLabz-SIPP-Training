@@ -90,15 +90,14 @@ Each entry includes concepts covered, skills practiced, and links to the exact c
 ## Workshop Branch 🧱
 
 ### 📅 27/06/25 (Thur) – Day 1  – Questions to Solve 
-*Topics*: 1.Online quiz platform - Result Processor 2. Digital Book Shelf
-🔗 [Code](1.https://github.com/ANUBHAV-03042004/BridgeLabz-SIPP-Training/tree/Workshop/Workshop/OnlineQuizPlatform , 
-2.https://github.com/ANUBHAV-03042004/BridgeLabz-SIPP-Training/tree/Workshop/Workshop/DigitalBookShelf)
+*Topics*:Online quiz platform - Result Processor 🔗 [Code](https://github.com/ANUBHAV-03042004/BridgeLabz-SIPP-Training/tree/Workshop/Workshop/OnlineQuizPlatform ) , 
+ Digital Book Shelf 🔗 [Code](https://github.com/ANUBHAV-03042004/BridgeLabz-SIPP-Training/tree/Workshop/Workshop/DigitalBookShelf)
 
 ---
 ### 📅 28/06/25 (Fri) – Day 2  – Questions to Solve 
-*Topics*: 1.Flight Booking System 2. Movie Schedule Manager
-🔗 [Code](1.https://github.com/ANUBHAV-03042004/BridgeLabz-SIPP-Training/tree/Workshop/Workshop/FlightBookingSystem , 
-2.https://github.com/ANUBHAV-03042004/BridgeLabz-SIPP-Training)
+*Topics*:Flight Booking System 🔗 [Code](https://github.com/ANUBHAV-03042004/BridgeLabz-SIPP-Training/tree/Workshop/Workshop/FlightBookingSystem ), 
+Movie Schedule Manager 
+🔗 [Code](https://github.com/ANUBHAV-03042004/BridgeLabz-SIPP-Training)
 
 ---
 
