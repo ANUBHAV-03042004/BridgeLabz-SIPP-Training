@@ -4,7 +4,9 @@ public class Developer extends Employee {
     private String programmingLanguage;
 
     public Developer(String name, int id, double salary, String language) {
-        super(name, id, salary);
+        super.setname(name);
+        super.setid(id);
+        super.setsalary(salary);
         this.programmingLanguage = language;
 //        add programming language if role is developer
     }
