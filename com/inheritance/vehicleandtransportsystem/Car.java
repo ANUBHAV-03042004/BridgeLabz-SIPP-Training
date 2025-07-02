@@ -4,7 +4,8 @@ public class Car extends Vehicle {
     private int seatCapacity;
 // car has seat capacity
     public Car(int maxSpeed, String fuelType, int seatCapacity) {
-        super(maxSpeed, fuelType);
+        super.setmaxspeed(maxSpeed);
+        super.setfueltype(fuelType);
         this.seatCapacity = seatCapacity;
     }
 

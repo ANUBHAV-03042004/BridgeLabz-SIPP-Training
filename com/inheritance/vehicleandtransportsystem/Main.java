@@ -8,9 +8,6 @@ public class Main {
 	          int count = Integer.parseInt(sc.nextLine());
 
 	          Vehicle[] vehicles = new Vehicle[count];
-//	  	            new Car(180, "Petrol", 5),
-//	  	            new Truck(120, "Diesel", 10000),
-//	  	            new Bike(150, "Petrol", true)
 	  	        
 	          for (int i = 0; i < count; i++) {
 	              System.out.println("\nEnter details for Vehicle #" + (i + 1));

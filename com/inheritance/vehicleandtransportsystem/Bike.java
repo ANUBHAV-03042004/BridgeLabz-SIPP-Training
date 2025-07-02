@@ -4,7 +4,8 @@ public class Bike extends Vehicle {
     private boolean hasCarrier;
 // bike has carrier or not.
     public Bike(int maxSpeed, String fuelType, boolean hasCarrier) {
-        super(maxSpeed, fuelType);
+    	  super.setmaxspeed(maxSpeed);
+          super.setfueltype(fuelType);
         this.hasCarrier = hasCarrier;
     }
 

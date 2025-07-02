@@ -4,7 +4,8 @@ public class Truck extends Vehicle {
     private int loadCapacity;
 // truck has load capacity
     public Truck(int maxSpeed, String fuelType, int loadCapacity) {
-        super(maxSpeed, fuelType);
+        super.setmaxspeed(maxSpeed);
+        super.setfueltype(fuelType);
         this.loadCapacity = loadCapacity;
     }
 
