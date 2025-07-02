@@ -1,4 +1,4 @@
-package singleinheritance.librarymanagementsystem;
+package inheritance.singleinheritance.librarymanagementsystem;
 
 public class Main {
 	    public static void main(String[] args) {
