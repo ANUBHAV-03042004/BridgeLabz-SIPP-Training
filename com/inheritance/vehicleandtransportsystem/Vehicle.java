@@ -3,13 +3,13 @@ public class Vehicle {
     private int maxSpeed;
     private String fuelType;
 // parent class
-    public void setmaxspeed(int maxspeed) {
+    public void setmaxspeed(int maxSpeed) {
     	  this.maxSpeed = maxSpeed;
     }
     public int getmaxspeed() {
     	return maxSpeed;
     }
-    public void setfueltype(String fueltype)
+    public void setfueltype(String fuelType)
     {
     	  this.fuelType = fuelType;
     }
