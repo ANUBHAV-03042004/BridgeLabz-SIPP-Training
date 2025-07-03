@@ -5,13 +5,13 @@ public class LibraryBookSystem {
  String author;
  double price;
  boolean available;
-
  // Constructor
  public LibraryBookSystem(String title, String author, double price, boolean available) {
      this.title = title;
      this.author = author;
      this.price = price;
      this.available = available;
+     
  }
 
  // Method to borrow a book
@@ -33,6 +33,6 @@ public class LibraryBookSystem {
 	 LibraryBookSystem book = new LibraryBookSystem("1984", "George Orwell", 399.0, true);
      book.displayInfo();
      book.borrowBook();
-     book.borrowBook(); // Trying to borrow again
+     book.borrowBook(); // Trying to borrow again 2
  }
 }
