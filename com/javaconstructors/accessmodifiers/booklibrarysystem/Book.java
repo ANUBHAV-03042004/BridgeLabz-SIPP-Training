@@ -1,4 +1,4 @@
-package accessmodifiers.booklibrarysystem;
+package javaconstructors.accessmodifiers.booklibrarysystem;
 
 public class Book {
     public String ISBN;                // Public

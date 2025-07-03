@@ -1,4 +1,4 @@
-package accessmodifiers.universitymanagementsystem;
+package javaconstructors.accessmodifiers.universitymanagementsystem;
 //subclass
 class PostgraduateStudent extends UniversityManagementSystem {
     public PostgraduateStudent(int rollNumber, String name, double CGPA) {

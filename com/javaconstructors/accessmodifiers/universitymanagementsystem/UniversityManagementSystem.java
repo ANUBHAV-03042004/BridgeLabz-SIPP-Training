@@ -1,4 +1,4 @@
-package accessmodifiers.universitymanagementsystem;
+package javaconstructors.accessmodifiers.universitymanagementsystem;
 
 public class UniversityManagementSystem {
 	    public int rollNumber;              // Public: Accessible from anywhere

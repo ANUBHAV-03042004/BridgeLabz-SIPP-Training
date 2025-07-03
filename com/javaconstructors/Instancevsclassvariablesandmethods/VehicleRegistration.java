@@ -1,4 +1,4 @@
-package Instancevsclassvariablesandmethods;
+package javaconstructors.Instancevsclassvariablesandmethods;
 
 public class VehicleRegistration {
 	// Instance variables

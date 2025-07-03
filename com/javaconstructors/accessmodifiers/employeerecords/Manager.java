@@ -1,4 +1,4 @@
-package accessmodifiers.employeerecords;
+package javaconstructors.accessmodifiers.employeerecords;
 
 public class Manager extends Employee{
 	Manager(int employeeId,String department,double salary)

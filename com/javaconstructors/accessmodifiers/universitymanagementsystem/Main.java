@@ -1,4 +1,4 @@
-package accessmodifiers.universitymanagementsystem;
+package javaconstructors.accessmodifiers.universitymanagementsystem;
 
 public class Main {
 	  public static void main(String[] args) {

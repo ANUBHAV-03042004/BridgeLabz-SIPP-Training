@@ -1,4 +1,4 @@
-package Instancevsclassvariablesandmethods;
+package javaconstructors.Instancevsclassvariablesandmethods;
 
 public class ProductInventory {
  // Instance variables: Unique for each product
