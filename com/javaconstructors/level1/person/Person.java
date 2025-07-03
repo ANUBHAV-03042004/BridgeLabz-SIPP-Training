@@ -1,4 +1,4 @@
-package javaconstructors.level1.Person;
+package javaconstructors.level1.person;
 
 public class Person {
  String name;
