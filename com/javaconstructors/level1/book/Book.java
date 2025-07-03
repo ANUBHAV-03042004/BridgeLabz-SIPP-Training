@@ -1,4 +1,4 @@
-package javaconstructorsinstancevsclassvariablesaccessmodifiers.level1.book;
+package javaconstructors.level1.book;
 
 public class Book {
  // Attributes of the Book class
