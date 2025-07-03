@@ -7,7 +7,6 @@ public class ProductInventory {
 
  // Class variable: Shared by all instances
  private static int totalProducts = 0;
-
  // Constructor
  public ProductInventory(String productName, double price) {
      this.productName = productName;
