@@ -2,6 +2,9 @@ package objectorienteddesignprinciples.objectrelationshipsandcommunication.assoc
 	import java.util.ArrayList;
 	import java.util.List;
 
+import objectorienteddesignprinciples.objectrelationshipsandcommunication.aggregationandassociation.Course;
+import objectorienteddesignprinciples.objectrelationshipsandcommunication.aggregationandassociation.Student;
+
 	class Course {
 	    private String name;
 	    private List<Student> students;
