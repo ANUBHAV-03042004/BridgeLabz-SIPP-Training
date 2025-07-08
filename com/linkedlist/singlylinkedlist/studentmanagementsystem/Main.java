@@ -1,4 +1,4 @@
-package linkedlist.singlylinkedlist;
+package linkedlist.singlylinkedlist.studentmanagementsystem;
 
 import java.util.Scanner;
 
