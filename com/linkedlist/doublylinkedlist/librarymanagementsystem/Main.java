@@ -2,6 +2,7 @@ package linkedlist.doublylinkedlist.librarymanagementsystem;
 
 public class Main {
 	    public static void main(String[] args) {
+//	    	also reverse the linked list
 	    	LibraryManagementSystem lib = new LibraryManagementSystem();
 
 	        lib.addFirst("The Alchemist", "Paulo Coelho", "Fiction", 1, true);
