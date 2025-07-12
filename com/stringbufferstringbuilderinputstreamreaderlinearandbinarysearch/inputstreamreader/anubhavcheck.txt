@@ -1,0 +1,5 @@
+Welcome to BridgeLabz Training!
+This is a test file for InputStreamReader.
+It contains multiple lines of text.
+Enjoy coding in Java!
+UTF-8 characters: é, ñ, ü, ©, ®.
