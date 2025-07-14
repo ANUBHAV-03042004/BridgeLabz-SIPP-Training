@@ -33,6 +33,7 @@ public static void main(String args[])
 			System.out.println("Input length mismatch; maybe you typed wrong no. of answers to be checked or skipped answering a question.");
 		}
 	}
+	sc.close();
 }
 public static int MatchAnswer(String[] person,String [] correct_ans)
 {
