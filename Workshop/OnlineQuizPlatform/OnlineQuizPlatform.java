@@ -1,4 +1,4 @@
-package OnlineQuizPlatform;
+package Workshop.OnlineQuizPlatform;
 import java.util.*;
 public class OnlineQuizPlatform {
 public static void main(String args[])

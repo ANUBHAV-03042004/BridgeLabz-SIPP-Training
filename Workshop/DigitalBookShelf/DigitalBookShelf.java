@@ -1,4 +1,4 @@
-package DigitalBookShelf;
+package Workshop.DigitalBookShelf;
 import java.util.*;
 public class DigitalBookShelf
 {
