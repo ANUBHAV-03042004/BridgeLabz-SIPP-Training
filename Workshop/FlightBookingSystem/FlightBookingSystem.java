@@ -71,6 +71,7 @@ public static void main(String args[])
 	else {
 		System.out.println("No Flight Booked");
 	}
+	sc.close();
 }
 public static void SearchFlight(String FlightsToSearch,String[]Flight_Name,int[]FlightId,String[]arrival_time,String[]departure_time,String[]DateOfArrival,String[]Source,String[] Destination,int[]Terminal,int[]price,ArrayList<String>UserSearchedFlights){
 	for(int i=0;i<Flight_Name.length;i++)
