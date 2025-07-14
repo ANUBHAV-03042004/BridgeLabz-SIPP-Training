@@ -22,6 +22,7 @@ sc.nextLine();
 String authorSearch=sc.nextLine();
 searchByAuthor(authorSearch,books,searchedbooks);
 DisplaySearchedBooks(searchedbooks);
+sc.close();
 	}
 	public static List addBooks(String title,String author,ArrayList<String>books){
 	    books.add(title +"-"+author);
