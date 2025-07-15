@@ -10,6 +10,7 @@ public class Genre {
 		 }
 	 }
 	 linkedlist head=null;
+//		add genre
 	 public void addgenre(String data) {
 		 if(head==null) {
 			 head=new linkedlist(data);
