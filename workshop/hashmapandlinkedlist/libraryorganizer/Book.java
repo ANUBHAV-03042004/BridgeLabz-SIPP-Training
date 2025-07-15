@@ -1,5 +1,6 @@
 package hashmapandlinkedlist.libraryorganizer;
 import java.util.*;
+//used hashmap and linked list
 public class Book extends Genre {
 	class booklink{
 String value;
