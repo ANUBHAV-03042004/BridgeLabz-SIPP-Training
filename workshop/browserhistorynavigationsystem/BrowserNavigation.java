@@ -1,4 +1,4 @@
-package linkedlist.doublylinkedlist.browserhistorynavigationsystem;
+package browserhistorynavigationsystem;
 
 abstract class BrowserNavigation {
 abstract void addhistory(String data);

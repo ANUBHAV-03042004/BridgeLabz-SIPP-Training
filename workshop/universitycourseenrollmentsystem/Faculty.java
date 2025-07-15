@@ -1,4 +1,4 @@
-package Workshop.universitycourseenrollmentsystem;
+package universitycourseenrollmentsystem;
 import java.util.*;
 public class Faculty extends Course implements Graded {
 ArrayList<Student> facultystudent;

@@ -1,4 +1,5 @@
-package linkedlist.doublylinkedlist.browserhistorynavigationsystem;
+package browserhistorynavigationsystem;
+
 
 public class BrowserHistoryNavigationSystem extends BrowserNavigation {
 class Node{

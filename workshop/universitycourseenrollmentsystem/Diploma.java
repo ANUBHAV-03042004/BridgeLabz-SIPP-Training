@@ -1,4 +1,4 @@
-package Workshop.universitycourseenrollmentsystem;
+package universitycourseenrollmentsystem;
 
 public class Diploma extends Student {
 

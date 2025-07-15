@@ -1,4 +1,4 @@
-package Workshop.FlightBookingSystem;
+package flightbookingsystem;
 import java.util.*;
 public class FlightBookingSystem {
 public static void main(String args[])
