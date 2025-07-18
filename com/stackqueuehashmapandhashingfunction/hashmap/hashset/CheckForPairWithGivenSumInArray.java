@@ -1,4 +1,4 @@
-package stackqueuehashmapandhashingfunction.hashmap;
+package stackqueuehashmapandhashingfunction.hashmap.hashset;
 import java.util.*;
 public class CheckForPairWithGivenSumInArray {
 
