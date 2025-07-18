@@ -19,7 +19,7 @@ public class LongestConsecutiveSequence {
 	                }
 
 	                longest = Math.max(longest, streak);
-	            }
+	            } 
 	        }
 
 	        return longest;
