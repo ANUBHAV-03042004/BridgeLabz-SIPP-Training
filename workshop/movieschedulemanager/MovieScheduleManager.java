@@ -90,7 +90,7 @@ import java.util.List;
 	            manager.addMovie("Inception", "14:30");
 	            manager.addMovie("Interstellar", "17:45");
 	            manager.addMovie("The Matrix", "20:00");
-	            // manager.addMovie("Invalid Movie", "25:99"); // Uncomment to test exception
+	            manager.addMovie("Invalid Movie", "25:99"); // Uncomment to test exception
 	        } catch (InvalidTimeFormatException e) {
 	            System.out.println(" Error: " + e.getMessage());
 	        }
