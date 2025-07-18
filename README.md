@@ -115,6 +115,10 @@ Each entry includes concepts covered, skills practiced, and links to the exact c
 *Topics*:-StringBuilder , StringBuffer , FileReader, InputStreamReader , Linear Search ,Binary Search
 🔗 [Code](https://github.com/ANUBHAV-03042004/BridgeLabz-SIPP-Training/tree/DSA/com/stringbufferstringbuilderinputstreamreaderlinearandbinarysearch)
 ---
+### 📅 11/07/25 (Fri) – Day 5 – Submission of Algorithm's Runtime Analysis & Big-O Notation
+*Topics*:- General Algorithm Best Practices , Time and space Complexity Optimization
+🔗 [Code](https://github.com/ANUBHAV-03042004/BridgeLabz-SIPP-Training/tree/DSA/com/algorithmsruntimeanalysisandbigonotation)
+---
 
 ## Workshop Branch 🧱
 
@@ -126,7 +130,7 @@ Each entry includes concepts covered, skills practiced, and links to the exact c
 ### 📅 28/06/25 (Sat) – Day 2  – Questions to Solve 
 *Topics*:Flight Booking System 🔗 [Code](https://github.com/ANUBHAV-03042004/BridgeLabz-SIPP-Training/tree/Workshop/Workshop/FlightBookingSystem ), 
 Movie Schedule Manager 
-🔗 [Code](https://github.com/ANUBHAV-03042004/BridgeLabz-SIPP-Training)
+🔗 [Code](https://github.com/ANUBHAV-03042004/BridgeLabz-SIPP-Training/tree/Workshop/workshop/movieschedulemanager)
 ---
 ### 📅 04/07/25 (Fri) – Day 3  – Questions to Solve 
 *Topics*:Delivery Chain Management🔗 [Code](https://github.com/ANUBHAV-03042004/BridgeLabz-SIPP-Training/tree/Workshop/Workshop/FlightBookingSystem )
@@ -134,7 +138,16 @@ Movie Schedule Manager
 ### 📅 10/07/25 (Thu) – Day 4  – Questions to Solve 
 *Topics*:University Course Enrollment System🔗 [Code](https://github.com/ANUBHAV-03042004/BridgeLabz-SIPP-Training/tree/Workshop/Workshop/universitycourseenrollmentsystem)
 ---
-
+### 📅 11/07/25 (Fri) – Day 5  – Questions to Solve 
+*Topics*: CabGo – A Ride-Hailing App in the Making🔗 [Code](https://github.com/ANUBHAV-03042004/BridgeLabz-SIPP-Training/tree/Workshop/workshop/cabygoridehailingapp)
+---
+### 📅 14/07/25 (Mon) – Day 6  – Questions to Solve 
+*Topics*: Browser History Navigation🔗 [Code](https://github.com/ANUBHAV-03042004/BridgeLabz-SIPP-Training/tree/Workshop/workshop/browserhistorynavigationsystem) ,
+BookShelf – Library Organizer (HashMap + Linked List) 🔗 [Code](https://github.com/ANUBHAV-03042004/BridgeLabz-SIPP-Training/tree/Workshop/workshop/hashmapandlinkedlist/libraryorganizer)
+---
+### 📅 15/07/25 (Tue) – Day 5  – Questions to Solve 
+*Topics*:  Music Playlist Queue🔗 [Code](https://github.com/ANUBHAV-03042004/BridgeLabz-SIPP-Training/tree/Workshop/workshop/player)
+---
 
 ## 📝 Note:
 Each topic’s code is organized in its dedicated branch — but this main README connects everything.
