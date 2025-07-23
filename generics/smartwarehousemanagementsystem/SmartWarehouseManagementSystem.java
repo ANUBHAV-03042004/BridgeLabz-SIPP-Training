@@ -91,13 +91,13 @@ public class SmartWarehouseManagementSystem {
      furnitureStorage.addItem(new Furniture("Chair"));
      furnitureStorage.addItem(new Furniture("Table"));
 
-     System.out.println("📦 Electronics:");
+     System.out.println(" Electronics:");
      WarehouseUtils.displayItems(electronicsStorage.getItems());
 
-     System.out.println("\n🛒 Groceries:");
+     System.out.println("\n Groceries:");
      WarehouseUtils.displayItems(groceriesStorage.getItems());
 
-     System.out.println("\n🪑 Furniture:");
+     System.out.println("\n Furniture:");
      WarehouseUtils.displayItems(furnitureStorage.getItems());
  }
 }
