@@ -1,4 +1,4 @@
-package VotingSystem;
+package votingsystem;
 import java.util.*;
 class VotingSystem {
     Map<String, Integer> hashMap = new HashMap<>();
