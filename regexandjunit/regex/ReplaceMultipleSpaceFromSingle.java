@@ -1,4 +1,4 @@
-
+package regex;
 public class ReplaceMultipleSpaceFromSingle {
 	public static String replaceMultipleSpaces(String text) {
         return text.replaceAll("\\s+", " ");

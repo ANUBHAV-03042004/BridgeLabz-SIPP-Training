@@ -1,4 +1,4 @@
-
+package regex;
 public class ValidateHexColor {
 	  public static boolean validateHexColor(String color) {
 	        return color.matches("^#[0-9A-Fa-f]{6}$");

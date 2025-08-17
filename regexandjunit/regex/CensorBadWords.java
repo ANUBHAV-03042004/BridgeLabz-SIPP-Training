@@ -1,4 +1,4 @@
-
+package regex;
 public class CensorBadWords {
 	   public static String censorBadWords(String text, String[] badWords) {
 	        for (String word : badWords) {
