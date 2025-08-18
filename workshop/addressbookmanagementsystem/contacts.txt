@@ -1,2 +1,0 @@
-"Anubhav", "anubhav@example.com", "9876543210", "Delhi"
-"Riya", "riya@example.com", "9123456789", "Delhi"
