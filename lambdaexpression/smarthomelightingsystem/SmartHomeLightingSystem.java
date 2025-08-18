@@ -1,8 +1,5 @@
 package smarthomelightingsystem;
 
-interface LightAction {
- void activate();
-}
 
 public class SmartHomeLightingSystem {
  public static void main(String[] args) {
