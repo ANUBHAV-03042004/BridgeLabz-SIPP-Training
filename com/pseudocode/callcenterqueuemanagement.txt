@@ -1,0 +1,36 @@
+CLASS Customer
+    ATTRIBUTE name
+    ATTRIBUTE type  // "normal" or "emergency"
+
+    CONSTRUCTOR(name, type)
+        SET this.name = name
+        SET this.type = type
+
+CLASS CallCenter
+    ATTRIBUTE queue
+
+    CONSTRUCTOR()
+        INITIALIZE queue as empty
+
+    METHOD addCustomer(customer)
+        IF customer.type == "emergency"
+            INSERT customer at front of queue
+        ELSE
+            ADD customer at end of queue
+
+    METHOD serveCustomer()
+        IF queue is not empty
+            REMOVE firstCustomer from queue
+            PRINT "Serving: " + firstCustomer.name
+        ELSE
+            PRINT "No customers in queue"
+
+CLASS Main
+    METHOD main()
+        CREATE callCenter = CallCenter()
+        CREATE c1 = Customer("Alice", "normal")
+        CREATE c2 = Customer("Bob", "emergency")
+
+        CALL callCenter.addCustomer(c1)
+        CALL callCenter.addCustomer(c2)
+        CALL callCenter.serveCustomer()
