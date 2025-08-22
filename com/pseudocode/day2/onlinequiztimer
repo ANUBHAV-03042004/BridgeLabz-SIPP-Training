@@ -1,0 +1,11 @@
+array timeSlots = [30, 45, 60]  // time for each question
+index = 0
+
+while quiz not finished:
+    time = timeSlots[index]
+    while time > 0:
+        if time <= 5:
+            print "⚠ Warning: Few seconds left!"
+        wait(1 second)
+        time = time - 1
+    index = (index + 1) % length(timeSlots)
