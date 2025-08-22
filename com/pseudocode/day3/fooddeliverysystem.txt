@@ -1,0 +1,36 @@
+class Customer {
+    String name;
+    String address;
+}
+
+class Restaurant {
+    String name;
+    String location;
+}
+
+class DeliveryBoy {
+    String name;
+    String vehicleNo;
+}
+
+class Order {
+    Customer customer;
+    Restaurant restaurant;
+    DeliveryBoy deliveryBoy;
+    String foodItem;
+
+    void displayOrderDetails() {
+        print("Customer: " + customer.name);
+        print("Restaurant: " + restaurant.name);
+        print("Delivered By: " + deliveryBoy.name);
+    }
+}
+
+main() {
+    Customer c = new Customer("Anubhav", "Lucknow");
+    Restaurant r = new Restaurant("Pizza Hut", "Hazratganj");
+    DeliveryBoy d = new DeliveryBoy("Ravi", "UP32 AB 1234");
+
+    Order o = new Order(c, r, d, "Veg Pizza");
+    o.displayOrderDetails();
+}
