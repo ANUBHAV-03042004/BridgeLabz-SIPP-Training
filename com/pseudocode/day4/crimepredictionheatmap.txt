@@ -1,0 +1,28 @@
+class Graph:
+    adjList: Map<Zone, List<Zone>>
+    crimeData: Map<Zone, int>
+
+    method addEdge(zone1, zone2):
+        adjList[zone1].add(zone2)
+        adjList[zone2].add(zone1)
+
+function dfs(zone, visited, threshold):
+    mark zone as visited
+    if crimeData[zone] > threshold:
+        print("High-risk:", zone)
+
+    for neighbor in adjList[zone]:
+        if not visited[neighbor]:
+            dfs(neighbor, visited, threshold)
+
+Main:
+    graph = new Graph()
+    graph.addEdge("ZoneA", "ZoneB")
+    graph.addEdge("ZoneB", "ZoneC")
+
+    graph.crimeData["ZoneA"] = 10
+    graph.crimeData["ZoneB"] = 20
+    graph.crimeData["ZoneC"] = 5
+
+    visited = empty map
+    dfs("ZoneA", visited, threshold=15)
