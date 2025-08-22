@@ -1,0 +1,17 @@
+class AttendanceSystem:
+    records: char[students][days]
+
+    method markAttendance(studentId, day, status)
+    method updateAttendance(studentId, day, newStatus)
+    method report(studentId): return total 'P'
+
+Main:
+    system = new AttendanceSystem(30 students, 31 days)
+
+    system.markAttendance(1, 1, 'P')
+    system.markAttendance(1, 2, 'P')
+    system.markAttendance(1, 3, 'A')
+    
+    system.updateAttendance(1, 3, 'P')  # correction
+    
+    print(system.report(1))   # total present days
