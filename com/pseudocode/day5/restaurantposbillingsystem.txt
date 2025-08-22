@@ -1,0 +1,49 @@
+abstract class TaxCalculator:
+    method calculate(amount: double): double
+
+class FoodTax extends TaxCalculator:
+    method calculate(amount): return amount * 0.05
+
+class BeverageTax extends TaxCalculator:
+    method calculate(amount): return amount * 0.12
+
+class ImportedTax extends TaxCalculator:
+    method calculate(amount): return amount * 0.05 + 100   # customs duty
+
+interface DiscountPolicy:
+    method apply(amount: double): double
+
+class NoDiscount implements DiscountPolicy:
+    method apply(amount): return amount
+
+class FlatDiscount implements DiscountPolicy:
+    method apply(amount): return amount - 100
+
+class PercentageDiscount implements DiscountPolicy:
+    method apply(amount): return amount * 0.90   # 10% off
+
+class Item:
+    name: String
+    price: double
+    taxCalculator: TaxCalculator
+
+    method finalPrice():
+        return price + taxCalculator.calculate(price)
+
+class Bill:
+    items: List<Item>
+    discount: DiscountPolicy
+
+    method total():
+        sum = 0
+        for item in items:
+            sum = sum + item.finalPrice()
+        return discount.apply(sum)
+
+Main:
+    item1 = new Item("Paneer Tikka", 200, new FoodTax())
+    item2 = new Item("Coke", 50, new BeverageTax())
+    item3 = new Item("Imported Cheese", 500, new ImportedTax())
+
+    bill = new Bill([item1, item2, item3], new PercentageDiscount())
+    print(bill.total())
