@@ -1,0 +1,35 @@
+class SurveyResponse:
+    restaurantName: String
+    rating: int   # 1–5
+
+class SurveyAnalyzer:
+    responses: List<SurveyResponse>
+
+    method averageRatings():
+        result = Map<Restaurant, AverageRating>
+        for each response in responses:
+            group by restaurant
+            compute average
+        return result
+
+    method bestRestaurant():
+        find max average rating
+
+    method needsImprovement():
+        find min average rating
+
+Main:
+    responses = [
+        SurveyResponse("PizzaHut", 4),
+        SurveyResponse("PizzaHut", 5),
+        SurveyResponse("KFC", 3),
+        SurveyResponse("KFC", 4),
+        SurveyResponse("Subway", 5),
+        SurveyResponse("Subway", 4),
+        SurveyResponse("Subway", 5)
+    ]
+
+    analyzer = new SurveyAnalyzer(responses)
+    print(analyzer.averageRatings())  # PizzaHut=4.5, KFC=3.5, Subway=4.67
+    print(analyzer.bestRestaurant())  # Subway
+    print(analyzer.needsImprovement()) # KFC
