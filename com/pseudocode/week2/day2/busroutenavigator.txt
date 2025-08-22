@@ -1,0 +1,25 @@
+class Node:
+    stopName: String
+    next: Node
+
+class BusRoute:
+    head: Node
+    
+    method insertStop(afterStop, newStop)
+    method removeStop(stopName)
+    method searchStop(stopName): return true/false
+    method displayRoute()
+
+Main:
+    route = new BusRoute()
+    route.insertStop(null, "Depot")
+    route.insertStop("Depot", "Main Street")
+    route.insertStop("Main Street", "City Mall")
+    route.insertStop("City Mall", "Hospital")
+    route.insertStop("Hospital", "Airport")
+
+    route.insertStop("City Mall", "University")  # new stop
+    route.removeStop("Hospital")                 # remove stop
+
+    print(route.searchStop("Airport"))   # true
+    route.displayRoute()
