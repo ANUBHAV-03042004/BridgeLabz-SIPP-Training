@@ -1,0 +1,26 @@
+class User:
+    username: String
+    password: String
+    method login()
+
+class Student extends User:
+    enrolled: Boolean
+    method login():
+        if credentials valid AND enrolled == true:
+            return "Exam access granted"
+        else:
+            return "Access denied"
+
+class Admin extends User:
+    method login():
+        if credentials valid AND role == "admin":
+            return "Admin access granted"
+        else:
+            return "Access denied"
+
+Main:
+    student = new Student("john123", "pass", true)
+    print(student.login())
+
+    admin = new Admin("admin01", "adminpass")
+    print(admin.login())
