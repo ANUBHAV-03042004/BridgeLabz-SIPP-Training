@@ -1,0 +1,15 @@
+class Reading:
+    value: double
+
+Main:
+    energyData: Map<Zone, Map<Day, List<Reading>>>
+
+    # Example Data
+    energyData["Zone-A"]["2025-08-01"] = [120, 90, 200, 150]
+    energyData["Zone-B"]["2025-08-01"] = [300, 350, 250]
+
+    for each zone in energyData:
+        for each day in energyData[zone]:
+            readings = energyData[zone][day]
+            peak = max(readings)
+            print(zone, day, "Peak Load:", peak)
