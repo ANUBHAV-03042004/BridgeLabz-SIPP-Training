@@ -1,0 +1,44 @@
+interface DiagnosisStrategy:
+    method diagnose(symptoms: List<String>): List<String>
+
+class RuleBasedDiagnosis implements DiagnosisStrategy:
+    method diagnose(symptoms):
+        if symptoms contains ["fever", "cough", "fatigue"]:
+            return ["Flu", "COVID-19"]
+        return ["Unknown"]
+
+class AIBasedDiagnosis implements DiagnosisStrategy:
+    method diagnose(symptoms):
+        if symptoms contains ["headache", "dizziness", "nausea"]:
+            return ["Migraine", "Vertigo"]
+        return ["Unknown"]
+
+class ProbabilityBasedDiagnosis implements DiagnosisStrategy:
+    method diagnose(symptoms):
+        return ["Disease-A (70%)", "Disease-B (30%)"]
+
+class DiagnosisContext:
+    strategy: DiagnosisStrategy
+
+    method setStrategy(strategy):
+        this.strategy = strategy
+
+    method executeDiagnosis(symptoms):
+        return strategy.diagnose(symptoms)
+
+Main:
+    context = new DiagnosisContext()
+
+    context.setStrategy(new RuleBasedDiagnosis())
+    print(context.executeDiagnosis(["fever", "cough", "fatigue"]))
+
+    context.setStrategy(new AIBasedDiagnosis())
+    print(context.executeDiagnosis(["headache", "dizziness", "nausea"]))
+
+    # Tomorrow → New strategy
+    class GeneticPatternDiagnosis implements DiagnosisStrategy:
+        method diagnose(symptoms):
+            return ["Genetic Disorder Match Found"]
+
+    context.setStrategy(new GeneticPatternDiagnosis())
+    print(context.executeDiagnosis(["gene-mutation-marker"]))
