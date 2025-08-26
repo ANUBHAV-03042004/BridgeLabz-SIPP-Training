@@ -1,0 +1,14 @@
+Map<Integer, String> patientMap = new HashMap<>();
+
+// Insert
+patientMap.put(101, "Rohit Sharma");
+patientMap.put(102, "Virat Kohli");
+
+// Retrieve
+print(patientMap.get(101));
+
+// Update
+patientMap.put(101, "Rohit Sharma (Updated)");
+
+// Delete
+patientMap.remove(102);
