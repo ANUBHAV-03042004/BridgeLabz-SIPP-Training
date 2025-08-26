@@ -1,0 +1,14 @@
+class Item:
+    name: String
+    price: double
+
+cart: List<Item>
+
+method addItem(item):
+    cart.add(item)
+
+generic method calculateTotal(cart: List<T extends Item>):
+    total = 0
+    for item in cart:
+        total += item.price
+    return total
