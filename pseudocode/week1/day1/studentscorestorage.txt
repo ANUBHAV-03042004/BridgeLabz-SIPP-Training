@@ -1,9 +1,0 @@
-CLASS Main
-    METHOD main()
-        CREATE scores = HashMap<String, Integer>
-        PUT ("Alice", 85) into scores
-        PUT ("Bob", 90) into scores
-        PUT ("Charlie", 75) into scores
-
-        highest = FIND student with MAX score using stream
-        PRINT "Highest Scorer: " + highest
