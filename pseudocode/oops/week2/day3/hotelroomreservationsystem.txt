@@ -1,0 +1,22 @@
+abstract class Room:
+    roomNumber: int
+    customerName: String
+    daysStayed: int
+    abstract method calculateBill()
+
+class DeluxeRoom extends Room:
+    rate = 3000
+    method calculateBill():
+        return daysStayed * rate
+
+class SuiteRoom extends Room:
+    rate = 5000
+    method calculateBill():
+        return daysStayed * rate
+
+Main:
+    r1 = new DeluxeRoom(101, "Ravi", 3)
+    print("Bill for Ravi: ₹" + r1.calculateBill())
+
+    r2 = new SuiteRoom(202, "Anita", 2)
+    print("Bill for Anita: ₹" + r2.calculateBill())
