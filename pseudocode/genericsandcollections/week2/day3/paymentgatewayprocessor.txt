@@ -1,0 +1,37 @@
+class Transaction<T>:
+    payment: T
+    constructor(payment)
+    method processPayment():
+        print("Processing Payment...")
+        print(payment.getDetails())
+
+class UPI:
+    upiId: String
+    amount: Double
+    merchant: String
+    method getDetails():
+        return "Payment of ₹" + amount + " via UPI successful for " + merchant
+
+class Card:
+    cardNumber: String
+    amount: Double
+    merchant: String
+    method getDetails():
+        return "Payment of ₹" + amount + " via Card ending " + last4digits(cardNumber) + " successful for " + merchant
+
+class NetBanking:
+    bankName: String
+    accountNumber: String
+    amount: Double
+    method getDetails():
+        return "Payment of ₹" + amount + " via NetBanking (" + bankName + ") successful"
+
+Main:
+    t1 = new Transaction<UPI>(new UPI("user@upi", 1200, "Amazon"))
+    t1.processPayment()
+
+    t2 = new Transaction<Card>(new Card("1234-5678-9876-5432", 5000, "MakeMyTrip"))
+    t2.processPayment()
+
+    t3 = new Transaction<NetBanking>(new NetBanking("HDFC","00112233",8000))
+    t3.processPayment()
