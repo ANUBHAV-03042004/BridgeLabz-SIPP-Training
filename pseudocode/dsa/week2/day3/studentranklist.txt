@@ -1,0 +1,22 @@
+class Student:
+    name: String
+    marks: int
+
+function compare(s1, s2):
+    if s1.marks != s2.marks:
+        return s1.marks > s2.marks   # Higher marks first
+    else:
+        return s1.name < s2.name     # Alphabetical if tie
+
+function mergeSort(students):
+    if students.length <= 1:
+        return students
+    mid = length/2
+    left = mergeSort(left half)
+    right = mergeSort(right half)
+    return merge(left, right, compare)
+
+Main:
+    students = [("Amit",92),("Bhavna",92),("Kiran",85),("Dinesh",78),("Charu",92)]
+    sortedList = mergeSort(students)
+    print(sortedList)
