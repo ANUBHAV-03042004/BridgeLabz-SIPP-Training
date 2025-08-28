@@ -1,0 +1,44 @@
+class Course:
+    title: String
+    duration: String
+    price: Double
+    
+    constructor(title, duration, price)
+    method getDetails():
+        return title + " - " + duration + " - ₹" + price
+
+class Student:
+    name: String
+    email: String
+    enrolledCourses: List<Course>
+    
+    constructor(name, email)
+    method enrollCourse(course):
+        if course not in enrolledCourses:
+            enrolledCourses.add(course)
+            print(name + " enrolled in " + course.title)
+        else:
+            print("Already enrolled in " + course.title)
+
+    method viewEnrolledCourses():
+        print(name + "'s Enrolled Courses:")
+        for course in enrolledCourses:
+            print(course.getDetails())
+
+Main:
+    # Step 1 - Create Courses
+    c1 = new Course("Java Programming Basics", "6 weeks", 4999)
+    c2 = new Course("Data Structures in Java", "8 weeks", 5999)
+    c3 = new Course("Spring Boot for Web Development", "10 weeks", 6999)
+
+    # Step 2 - Student Amit
+    s1 = new Student("Amit", "amit@gmail.com")
+    s1.enrollCourse(c1)
+    s1.enrollCourse(c2)
+    s1.viewEnrolledCourses()
+
+    # Step 3 - Student Priya
+    s2 = new Student("Priya", "priya@gmail.com")
+    s2.enrollCourse(c3)
+    s2.enrollCourse(c1)
+    s2.viewEnrolledCourses()
