@@ -1,0 +1,17 @@
+function binarySearch(catalog, product):
+    left = 0
+    right = catalog.length - 1
+    while left <= right:
+        mid = (left + right) / 2
+        if catalog[mid] == product:
+            return True
+        else if catalog[mid] < product:
+            left = mid + 1
+        else:
+            right = mid - 1
+    return False
+
+Main:
+    catalog = ["AirPods","Backpack","Camera","Laptop","Shoes","Smartphone","Watch"]
+    search("Laptop") → Found
+    search("Headphones") → Not Found
