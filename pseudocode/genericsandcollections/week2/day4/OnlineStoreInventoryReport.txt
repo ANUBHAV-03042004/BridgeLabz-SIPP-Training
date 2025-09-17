@@ -1,0 +1,54 @@
+// Class Product
+class Product:
+    name
+    category
+    price
+    quantity
+
+
+// Main
+main:
+    products = [
+        Product("Laptop", "Electronics", 60000, 10),
+        Product("Phone", "Electronics", 40000, 20),
+        Product("Headphones", "Electronics", 2000, 50),
+        Product("Shirt", "Clothing", 1500, 40),
+        Product("Jeans", "Clothing", 2500, 25),
+        Product("Blender", "Home", 3000, 15),
+        Product("Vacuum", "Home", 7000, 10)
+    ]
+
+    // 1. Total Inventory Value per Category
+    totalValueByCategory = products.stream()
+        .collect(groupingBy(
+            product -> product.category,
+            summingDouble(product -> product.price * product.quantity)
+        ))
+
+    print("📊 Total Inventory Value by Category:")
+    for (cat, value) in totalValueByCategory:
+        print(cat + " → " + value)
+
+
+    // 2. Average Price per Category
+    avgPriceByCategory = products.stream()
+        .collect(groupingBy(
+            product -> product.category,
+            averagingDouble(product -> product.price)
+        ))
+
+    print("📊 Average Price by Category:")
+    for (cat, avg) in avgPriceByCategory:
+        print(cat + " → " + avg)
+
+
+    // 3. Highest-Priced Product per Category
+    maxPriceByCategory = products.stream()
+        .collect(groupingBy(
+            product -> product.category,
+            maxBy(comparingDouble(product -> product.price))
+        ))
+
+    print("📊 Highest-Priced Product by Category:")
+    for (cat, optProduct) in maxPriceByCategory:
+        print(cat + " → " + optProduct.name + " (" + optProduct.price + ")")
