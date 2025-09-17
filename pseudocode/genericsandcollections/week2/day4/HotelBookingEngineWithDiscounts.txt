@@ -1,0 +1,69 @@
+// Interface Promotion<T>
+interface Promotion<T>:
+    function applyDiscount(customer, bookingAmount)
+
+
+// Customer Types
+class RegularCustomer:
+    name
+    loyaltyPoints
+
+class PremiumCustomer:
+    name
+    membershipYears
+
+class CorporateCustomer:
+    companyName
+    employeeCount
+
+
+// Promotions
+class RegularPromotion implements Promotion<RegularCustomer>:
+    function applyDiscount(customer, bookingAmount):
+        discount = bookingAmount * 0.05
+        if customer.loyaltyPoints > 100:
+            discount += bookingAmount * 0.02
+        return bookingAmount - discount
+
+class PremiumPromotion implements Promotion<PremiumCustomer>:
+    function applyDiscount(customer, bookingAmount):
+        discount = bookingAmount * 0.15
+        if customer.membershipYears > 5:
+            discount += bookingAmount * 0.05
+        return bookingAmount - discount
+
+class CorporatePromotion implements Promotion<CorporateCustomer>:
+    function applyDiscount(customer, bookingAmount):
+        if customer.employeeCount > 50:
+            discount = bookingAmount * 0.20
+        else:
+            discount = bookingAmount * 0.10
+        return bookingAmount - discount
+
+
+// Generic Hotel Booking Engine
+class HotelBookingEngine<T>:
+    promotion
+    constructor(promotion):
+        this.promotion = promotion
+
+    function calculateFinalAmount(customer, bookingAmount):
+        return promotion.applyDiscount(customer, bookingAmount)
+
+
+// Main
+main:
+    rc = RegularCustomer("Alice", 120)
+    pc = PremiumCustomer("Bob", 6)
+    cc = CorporateCustomer("TechCorp", 75)
+
+    regEngine = HotelBookingEngine(new RegularPromotion())
+    premEngine = HotelBookingEngine(new PremiumPromotion())
+    corpEngine = HotelBookingEngine(new CorporatePromotion())
+
+    print("Regular Customer Bill: " + regEngine.calculateFinalAmount(rc, 10000))
+    print("Premium Customer Bill: " + premEngine.calculateFinalAmount(pc, 20000))
+    print("Corporate Customer Bill: " + corpEngine.calculateFinalAmount(cc, 50000))
+
+    edgeCase = RegularCustomer("Eve", 0)
+    print("Edge Case Regular (0 pts): " + regEngine.calculateFinalAmount(edgeCase, 10000))
