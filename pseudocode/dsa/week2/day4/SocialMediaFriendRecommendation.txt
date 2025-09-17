@@ -1,0 +1,41 @@
+// Graph Representation
+friends = {
+    "Alice": ["Bob", "Charlie"],
+    "Bob": ["Alice", "David", "Emma"],
+    "Charlie": ["Alice", "Frank"],
+    "David": ["Bob"],
+    "Emma": ["Bob"],
+    "Frank": ["Charlie"]
+}
+
+
+// BFS for Friend Recommendation
+function recommendFriends(user):
+    direct = friends[user]
+    visited = set([user])
+    queue = [(user, 0)]
+    recommendations = []
+
+    while queue not empty:
+        (current, level) = queue.pop(0)
+        if level == 2:
+            recommendations.add(current)
+        if level < 2:
+            for neighbor in friends[current]:
+                if neighbor not in visited:
+                    visited.add(neighbor)
+                    queue.add((neighbor, level+1))
+
+    recommendations.remove(user)
+    for f in direct:
+        recommendations.remove(f)
+
+    return recommendations
+
+
+// Main
+main:
+    user = "Alice"
+    recs = recommendFriends(user)
+    print("Direct Friends: " + friends[user])
+    print("Friend Suggestions: " + recs)
