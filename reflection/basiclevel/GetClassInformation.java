@@ -1,4 +1,4 @@
-package getclassinformation;
+package basiclevel;
 
 	import java.lang.reflect.*;
 	public class GetClassInformation {
