@@ -1,0 +1,39 @@
+// Class Pet
+class Pet:
+    name
+    species
+    lastVaccinationDate
+
+    function checkVaccinationStatus():
+        monthsSince = differenceInMonths(today, lastVaccinationDate)
+        if monthsSince > 12:
+            return "OVERDUE! Please vaccinate immediately."
+        else if monthsSince == 11:
+            return "Due in 1 month. Reminder set."
+        else:
+            return "Up-to-date."
+
+
+// Class ClinicManager
+class ClinicManager:
+    pets = []
+
+    function registerPet(pet):
+        pets.add(pet)
+        print("Registering: " + pet.name + " (" + pet.species + ")")
+        status = pet.checkVaccinationStatus()
+        print("Status: " + status)
+
+
+// Main
+main:
+    clinic = ClinicManager()
+
+    p1 = Pet("Bruno", "Dog", "2024-10-12")
+    clinic.registerPet(p1)
+
+    p2 = Pet("Mittens", "Cat", "2023-06-15")
+    clinic.registerPet(p2)
+
+    p3 = Pet("Snowy", "Rabbit", "2024-09-10")
+    clinic.registerPet(p3)
