@@ -1,0 +1,53 @@
+// Class Student
+class Student:
+    name
+    marks
+
+
+// Merge Sort with Custom Comparator
+function mergeSort(students):
+    if students.length <= 1:
+        return students
+
+    mid = students.length / 2
+    left = mergeSort(students[0..mid])
+    right = mergeSort(students[mid+1..end])
+
+    return merge(left, right)
+
+
+function merge(left, right):
+    result = []
+    while left not empty AND right not empty:
+        if left[0].marks > right[0].marks:
+            result.add(left.removeFirst())
+        else if left[0].marks < right[0].marks:
+            result.add(right.removeFirst())
+        else:
+            if left[0].name < right[0].name:
+                result.add(left.removeFirst())
+            else:
+                result.add(right.removeFirst())
+
+    result.addAll(left)
+    result.addAll(right)
+    return result
+
+
+// Main
+main:
+    students = [
+        Student("Rahul", 88),
+        Student("Aditi", 95),
+        Student("Zoya", 88),
+        Student("Karan", 76),
+        Student("Meera", 95),
+        Student("Aarav", 92)
+    ]
+
+    sortedStudents = mergeSort(students)
+
+    rank = 1
+    for s in sortedStudents:
+        print(rank + ". " + s.name + " - " + s.marks)
+        rank += 1
