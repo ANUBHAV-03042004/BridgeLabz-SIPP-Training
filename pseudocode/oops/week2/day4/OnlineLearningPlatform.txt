@@ -1,0 +1,56 @@
+// Abstract Class Course
+abstract class Course:
+    title
+    duration
+    price
+    instructor
+    schedule
+
+    abstract function conductAssessment()
+
+
+// Subclasses
+class ProgrammingCourse extends Course:
+    function conductAssessment():
+        print("Conducting coding challenge on HackerRank...")
+
+class DesignCourse extends Course:
+    function conductAssessment():
+        print("Submit a portfolio of 3 app designs.")
+
+class BusinessCourse extends Course:
+    function conductAssessment():
+        print("Group case-study presentation scheduled next week.")
+
+
+// Supporting Classes
+class Instructor:
+    name
+    expertise
+    rating
+
+class Schedule:
+    dayOfWeek
+    timeSlot
+    mode
+
+
+// Main
+main:
+    inst1 = Instructor("Dr. Rajeev", "Java Expert", 4.9)
+    sched1 = Schedule("Monday", "7-9 PM", "Live")
+    course1 = ProgrammingCourse("Java Mastery", "6 months", 5000, inst1, sched1)
+
+    inst2 = Instructor("Ms. Ananya", "UX Designer", 4.7)
+    sched2 = Schedule("Flexible", "-", "Recorded")
+    course2 = DesignCourse("UX Design Fundamentals", "3 months", 4000, inst2, sched2)
+
+    inst3 = Instructor("Mr. Arvind", "Business Analyst", 4.6)
+    sched3 = Schedule("Friday", "6-8 PM", "Live")
+    course3 = BusinessCourse("Business Strategy 101", "4 months", 6000, inst3, sched3)
+
+    for course in [course1, course2, course3]:
+        print("Course: " + course.title)
+        print("Instructor: " + course.instructor.name + " (" + course.instructor.expertise + ")")
+        print("Schedule: " + course.schedule.dayOfWeek + " " + course.schedule.timeSlot)
+        course.conductAssessment()
