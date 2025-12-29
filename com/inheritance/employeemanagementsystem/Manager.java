@@ -1,5 +1,4 @@
 package inheritance.employeemanagementsystem;
-
 public class Manager extends Employee {
     private int teamSize;
 // manager has team size 
