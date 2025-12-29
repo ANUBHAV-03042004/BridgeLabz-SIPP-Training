@@ -1,4 +1,4 @@
-package linkedlist.circularlinkedlist.roundrobinscheduling;
+package circularlinkedlist.roundrobinscheduling;
 
 
 public class Main {

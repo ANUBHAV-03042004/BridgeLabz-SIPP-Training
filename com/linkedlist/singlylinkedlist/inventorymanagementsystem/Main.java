@@ -1,4 +1,4 @@
-package linkedlist.singlylinkedlist.inventorymanagementsystem;
+package singlylinkedlist.inventorymanagementsystem;
 public class Main {
     public static void main(String[] args) {
     	InventoryManagementSystem inv = new InventoryManagementSystem ();

@@ -1,4 +1,4 @@
-package linkedlist.singlylinkedlist.socialmediafriendconnection;
+package singlylinkedlist.socialmediafriendconnection;
 import java.util.*;
 
 class User {

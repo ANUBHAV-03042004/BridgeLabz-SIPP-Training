@@ -1,4 +1,4 @@
-package linkedlist.doublylinkedlist.undoredofunctionalityfortexteditor;
+package doublylinkedlist.undoredofunctionalityfortexteditor;
 
 class TextState {
     String content;

@@ -1,4 +1,4 @@
-package linkedlist.circularlinkedlist.taskscheduler;
+package circularlinkedlist.taskscheduler;
 
 public class Main {
     public static void main(String[] args) {

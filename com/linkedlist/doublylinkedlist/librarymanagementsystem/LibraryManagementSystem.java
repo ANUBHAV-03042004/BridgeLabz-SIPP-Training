@@ -1,4 +1,4 @@
-package linkedlist.doublylinkedlist.librarymanagementsystem;
+package doublylinkedlist.librarymanagementsystem;
 
 	class Book {
 	    String title, author, genre;

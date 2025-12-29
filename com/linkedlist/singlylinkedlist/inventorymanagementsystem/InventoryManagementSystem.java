@@ -1,4 +1,4 @@
-package linkedlist.singlylinkedlist.inventorymanagementsystem;
+package singlylinkedlist.inventorymanagementsystem;
 class InventoryItem {
     String itemName;
     int itemId;

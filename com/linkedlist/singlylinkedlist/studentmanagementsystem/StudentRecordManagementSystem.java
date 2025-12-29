@@ -1,4 +1,4 @@
-package linkedlist.singlylinkedlist.studentmanagementsystem;
+package singlylinkedlist.studentmanagementsystem;
 
 public class StudentRecordManagementSystem {
 	    

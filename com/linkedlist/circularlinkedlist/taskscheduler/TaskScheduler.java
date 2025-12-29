@@ -1,4 +1,4 @@
-package linkedlist.circularlinkedlist.taskscheduler;
+package circularlinkedlist.taskscheduler;
 
 public class TaskScheduler {
     private Task head = null;

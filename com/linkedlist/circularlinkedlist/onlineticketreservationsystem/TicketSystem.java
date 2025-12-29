@@ -1,4 +1,4 @@
-package linkedlist.circularlinkedlist.onlineticketreservationsystem;
+package circularlinkedlist.onlineticketreservationsystem;
 
 class Ticket {
     int ticketId;

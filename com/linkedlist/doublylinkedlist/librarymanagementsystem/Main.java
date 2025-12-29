@@ -1,4 +1,4 @@
-package linkedlist.doublylinkedlist.librarymanagementsystem;
+package doublylinkedlist.librarymanagementsystem;
 
 public class Main {
 	    public static void main(String[] args) {
